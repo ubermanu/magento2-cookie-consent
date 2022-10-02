@@ -9,7 +9,7 @@ define([
     'use strict';
 
     // Load the cookie consent lib once.
-    var cookieConsent =  initCookieConsent();
+    var cookieConsent = initCookieConsent();
 
     return function () {
         return cookieConsent;
