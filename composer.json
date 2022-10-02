@@ -1,0 +1,22 @@
+{
+    "name": "ubermanu/magento2-cookie-consent",
+    "description": "Cookie consent integration for Magento 2",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Vodor",
+            "email": "manu@paca.happy-dev.fr"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ubermanu\\CookieConsent\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
