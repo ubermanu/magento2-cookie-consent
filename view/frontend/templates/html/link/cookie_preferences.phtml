@@ -1,0 +1,24 @@
+<?php
+/** @var \Ubermanu\CookieConsent\Block\Html\Link\CookiePreferences $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+
+<li class="nav item">
+    <a <?= $block->getLinkAttributes() ?> href="#" data-role="cookie-preferences">
+        <?= $escaper->escapeHtml($block->getLabel()) ?>
+    </a>
+</li>
+
+<script>
+    require([
+        'jquery',
+        'Ubermanu_CookieConsent/js/cookie-consent',
+        'domReady!'
+    ], function ($, cookieConsent) {
+        'use strict';
+        $('[data-role=cookie-preferences]').on('click', function (e) {
+            e.preventDefault();
+            cookieConsent().showSettings();
+        });
+    });
+</script>

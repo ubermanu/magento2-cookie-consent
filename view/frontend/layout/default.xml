@@ -113,5 +113,14 @@
                 </arguments>
             </block>
         </referenceContainer>
+
+        <!-- Add a link to manage cookie preferences in the footer -->
+        <referenceBlock name="footer_links">
+            <block class="Ubermanu\CookieConsent\Block\Html\Link\CookiePreferences" ifconfig="web/cookie_consent/enabled" name="cookie-consent-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Cookie preferences</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>

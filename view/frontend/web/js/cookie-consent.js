@@ -11,5 +11,10 @@ define([
         throw new Error('The cookie consent lib is not loaded.');
     }
 
-    return window.initCookieConsent();
+    // Load the cookie consent lib once.
+    var cookieConsent =  window.initCookieConsent();
+
+    return function () {
+        return cookieConsent;
+    }
 });

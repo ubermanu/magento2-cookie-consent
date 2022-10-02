@@ -11,7 +11,7 @@
             'domReady!'
         ], function (cookieConsent) {
             'use strict';
-            cookieConsent.run($cookieConsentConfig);
+            cookieConsent().run($cookieConsentConfig);
         });";
     ?>
     <?= $secureRenderer->renderTag('script', [], $scriptString, false) ?>
