@@ -4,15 +4,11 @@
  */
 define([
     'vanilla-cookieconsent'
-], function () {
+], function (initCookieConsent) {
     'use strict';
 
-    if (typeof window['initCookieConsent'] !== 'function') {
-        throw new Error('The cookie consent lib is not loaded.');
-    }
-
     // Load the cookie consent lib once.
-    var cookieConsent =  window.initCookieConsent();
+    var cookieConsent =  initCookieConsent();
 
     return function () {
         return cookieConsent;
