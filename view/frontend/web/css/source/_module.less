@@ -1,0 +1,30 @@
+//
+//  Cookie Consent
+//  _____________________________________________
+
+& when (@media-common = true) {
+    #cc--main {
+        .lib-css(--cc-text, @text__color);
+        .lib-css(--cc-btn-primary-bg, @theme__color__primary);
+        .lib-css(--cc-btn-primary-hover-bg, @theme__color__primary-alt);
+        --cc-btn-secondary-text: var(--cc-text);
+    }
+
+    // Remove focus styles on links
+    .cc_div .cc-link {
+        &:focus,
+        &:active {
+            border: none;
+            background: none;
+        }
+    }
+
+    // Remove added border from magento
+    .cc_div .c-bn,
+    #s-cnt .b-bn .b-tl {
+        &:focus,
+        &:active {
+            border: none;
+        }
+    }
+}
