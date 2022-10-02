@@ -14,8 +14,5 @@
             cookieConsent.run($cookieConsentConfig);
         });";
     ?>
-    <style>
-        @import "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.css";
-    </style>
     <?= $secureRenderer->renderTag('script', [], $scriptString, false) ?>
 <?php endif; ?>
