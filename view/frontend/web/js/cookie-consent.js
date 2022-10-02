@@ -1,5 +1,6 @@
 /**
  * Return the instance of the cookie consent lib.
+ * @see https://github.com/orestbida/cookieconsent#api-methods
  * @returns {{run: function, show: function, hide: function, showSettings: function, hideSettings: function}}
  */
 define([
