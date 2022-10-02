@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+        </referenceContainer>
+        <!-- TODO: Move into after.body.start -->
+        <referenceContainer name="content">
+            <block class="Ubermanu\CookieConsent\Block\CookieConsent" name="cookie_consent"
+                   template="Ubermanu_CookieConsent::html/cookie_consent.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="language" xsi:type="array">
+                            <item name="consent_modal" xsi:type="array">
+                                <item name="title" xsi:type="string" translate="true">We use cookies!</item>
+                                <item name="description" xsi:type="string" translate="true"><![CDATA[Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>]]></item>
+                                <item name="primary_button" xsi:type="array">
+                                    <item name="text" xsi:type="string" translate="true">Accept All</item>
+                                    <item name="role" xsi:type="string">accept_all</item>
+                                </item>
+                                <item name="secondary_button" xsi:type="array">
+                                    <item name="text" xsi:type="string" translate="true">Reject All</item>
+                                    <item name="role" xsi:type="string">reject_all</item>
+                                </item>
+                            </item>
+                            <item name="settings_modal" xsi:type="array">
+                                <item name="title" xsi:type="string" translate="true">Cookie preferences</item>
+                                <item name="save_settings_btn" xsi:type="string" translate="true">Save settings</item>
+                                <item name="accept_all_btn" xsi:type="string" translate="true">Accept all</item>
+                                <item name="reject_all_btn" xsi:type="string" translate="true">Reject all</item>
+                                <item name="close_btn_label" xsi:type="string" translate="true">Close</item>
+                                <item name="cookie_table_headers" xsi:type="array">
+                                    <item name="0" xsi:type="array">
+                                        <item name="col1" xsi:type="string" translate="true">Name</item>
+                                    </item>
+                                    <item name="1" xsi:type="array">
+                                        <item name="col2" xsi:type="string" translate="true">Domain</item>
+                                    </item>
+                                    <item name="2" xsi:type="array">
+                                        <item name="col3" xsi:type="string" translate="true">Expiration</item>
+                                    </item>
+                                    <item name="3" xsi:type="array">
+                                        <item name="col4" xsi:type="string" translate="true">Description</item>
+                                    </item>
+                                </item>
+                                <item name="blocks" xsi:type="array">
+                                    <item name="0" xsi:type="array">
+                                        <item name="title" xsi:type="string" translate="true">Cookie usage 📢</item>
+                                        <item name="description" xsi:type="string" translate="true"><![CDATA[I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.]]></item>
+                                    </item>
+                                    <item name="1" xsi:type="array">
+                                        <item name="title" xsi:type="string" translate="true">Strictly necessary cookies</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly</item>
+                                        <item name="toggle" xsi:type="array">
+                                            <item name="value" xsi:type="string">necessary</item>
+                                            <item name="enabled" xsi:type="boolean">true</item>
+                                            <item name="readonly" xsi:type="boolean">true</item>
+                                        </item>
+                                    </item>
+                                    <item name="2" xsi:type="array">
+                                        <item name="title" xsi:type="string" translate="true">Performance and Analytics cookies</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies allow the website to remember the choices you have made in the past</item>
+                                        <item name="toggle" xsi:type="array">
+                                            <item name="value" xsi:type="string">analytics</item>
+                                            <item name="enabled" xsi:type="boolean">false</item>
+                                            <item name="readonly" xsi:type="boolean">false</item>
+                                        </item>
+                                        <item name="cookie_table" xsi:type="array">
+                                            <item name="0" xsi:type="array">
+                                                <item name="col1" xsi:type="string" translate="true">^_ga</item>
+                                                <item name="col2" xsi:type="string" translate="true">google.com</item>
+                                                <item name="col3" xsi:type="string" translate="true">2 years</item>
+                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users</item>
+                                                <item name="is_regex" xsi:type="boolean">true</item>
+                                            </item>
+                                            <item name="1" xsi:type="array">
+                                                <item name="col1" xsi:type="string" translate="true">_gid</item>
+                                                <item name="col2" xsi:type="string" translate="true">google.com</item>
+                                                <item name="col3" xsi:type="string" translate="true">1 day</item>
+                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users</item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                    <item name="3" xsi:type="array">
+                                        <item name="title" xsi:type="string" translate="true">Advertisement and Targeting cookies</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you</item>
+                                        <item name="toggle" xsi:type="array">
+                                            <item name="value" xsi:type="string">targeting</item>
+                                            <item name="enabled" xsi:type="boolean">false</item>
+                                            <item name="readonly" xsi:type="boolean">false</item>
+                                        </item>
+                                    </item>
+                                    <item name="4" xsi:type="array">
+                                        <item name="title" xsi:type="string" translate="true">More information</item>
+                                        <item name="description" xsi:type="string" translate="true"><![CDATA[For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.]]></item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                        <item name="gui_options" xsi:type="array">
+                            <item name="consent_modal" xsi:type="array">
+                                <item name="layout" xsi:type="string">cloud</item>
+                                <item name="position" xsi:type="string">bottom center</item>
+                                <item name="transition" xsi:type="string">slide</item>
+                                <item name="swap_buttons" xsi:type="string">false</item>
+                            </item>
+                            <item name="settings_modal" xsi:type="array">
+                                <item name="layout" xsi:type="string">box</item>
+                                <item name="transition" xsi:type="string">slide</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
