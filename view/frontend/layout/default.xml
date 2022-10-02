@@ -70,14 +70,14 @@
                                                 <item name="col1" xsi:type="string">^_ga</item>
                                                 <item name="col2" xsi:type="string">google.com</item>
                                                 <item name="col3" xsi:type="string" translate="true">2 years</item>
-                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users</item>
+                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users.</item>
                                                 <item name="is_regex" xsi:type="boolean">true</item>
                                             </item>
                                             <item name="1" xsi:type="array">
                                                 <item name="col1" xsi:type="string">_gid</item>
                                                 <item name="col2" xsi:type="string">google.com</item>
                                                 <item name="col3" xsi:type="string" translate="true">1 day</item>
-                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users</item>
+                                                <item name="col4" xsi:type="string" translate="true">Used to distinguish users.</item>
                                             </item>
                                         </item>
                                     </item>
