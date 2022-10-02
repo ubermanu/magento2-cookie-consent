@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.css"/>
+    </head>
     <body>
         <referenceContainer name="after.body.start">
-        </referenceContainer>
-        <!-- TODO: Move into after.body.start -->
-        <referenceContainer name="content">
             <block class="Ubermanu\CookieConsent\Block\CookieConsent" name="cookie_consent"
                    template="Ubermanu_CookieConsent::html/cookie_consent.phtml">
                 <arguments>
@@ -14,11 +14,11 @@
                             <item name="consent_modal" xsi:type="array">
                                 <item name="title" xsi:type="string" translate="true">We use cookies!</item>
                                 <item name="description" xsi:type="string" translate="true"><![CDATA[Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>]]></item>
-                                <item name="primary_button" xsi:type="array">
+                                <item name="primary_btn" xsi:type="array">
                                     <item name="text" xsi:type="string" translate="true">Accept All</item>
                                     <item name="role" xsi:type="string">accept_all</item>
                                 </item>
-                                <item name="secondary_button" xsi:type="array">
+                                <item name="secondary_btn" xsi:type="array">
                                     <item name="text" xsi:type="string" translate="true">Reject All</item>
                                     <item name="role" xsi:type="string">reject_all</item>
                                 </item>

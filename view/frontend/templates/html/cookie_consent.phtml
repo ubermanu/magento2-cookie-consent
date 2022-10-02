@@ -1,17 +1,21 @@
 <?php
 /** @var \Ubermanu\CookieConsent\Block\CookieConsent $block */
+/** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
 ?>
 <?php if ($block->isEnabled()): ?>
-    <style>
-        @import "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.css";
-    </style>
-    <script>
+    <?php
+    $cookieConsentConfig = $block->getJsLayout();
+    $scriptString = "
         require([
             'Ubermanu_CookieConsent/js/cookie-consent',
             'domReady!'
         ], function (cookieConsent) {
             'use strict';
-            cookieConsent.run(<?= $block->getJsLayout() ?>);
-        });
-    </script>
+            cookieConsent.run($cookieConsentConfig);
+        });";
+    ?>
+    <style>
+        @import "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.css";
+    </style>
+    <?= $secureRenderer->renderTag('script', [], $scriptString, false) ?>
 <?php endif; ?>
