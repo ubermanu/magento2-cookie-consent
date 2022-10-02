@@ -15,11 +15,11 @@
                                 <item name="title" xsi:type="string" translate="true">We use cookies!</item>
                                 <item name="description" xsi:type="string" translate="true"><![CDATA[Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>]]></item>
                                 <item name="primary_btn" xsi:type="array">
-                                    <item name="text" xsi:type="string" translate="true">Accept All</item>
+                                    <item name="text" xsi:type="string" translate="true">Accept all</item>
                                     <item name="role" xsi:type="string">accept_all</item>
                                 </item>
                                 <item name="secondary_btn" xsi:type="array">
-                                    <item name="text" xsi:type="string" translate="true">Reject All</item>
+                                    <item name="text" xsi:type="string" translate="true">Reject all</item>
                                     <item name="role" xsi:type="string">reject_all</item>
                                 </item>
                             </item>
@@ -50,7 +50,7 @@
                                     </item>
                                     <item name="1" xsi:type="array">
                                         <item name="title" xsi:type="string" translate="true">Strictly necessary cookies</item>
-                                        <item name="description" xsi:type="string" translate="true">These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.</item>
                                         <item name="toggle" xsi:type="array">
                                             <item name="value" xsi:type="string">necessary</item>
                                             <item name="enabled" xsi:type="boolean">true</item>
@@ -59,7 +59,7 @@
                                     </item>
                                     <item name="2" xsi:type="array">
                                         <item name="title" xsi:type="string" translate="true">Performance and Analytics cookies</item>
-                                        <item name="description" xsi:type="string" translate="true">These cookies allow the website to remember the choices you have made in the past</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies allow the website to remember the choices you have made in the past (such as your username, language or the region you are in) and provide enhanced, more personal features. They may also be used to provide services you have requested such as watching a video or commenting on a blog. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites.</item>
                                         <item name="toggle" xsi:type="array">
                                             <item name="value" xsi:type="string">analytics</item>
                                             <item name="enabled" xsi:type="boolean">false</item>
@@ -83,7 +83,7 @@
                                     </item>
                                     <item name="3" xsi:type="array">
                                         <item name="title" xsi:type="string" translate="true">Advertisement and Targeting cookies</item>
-                                        <item name="description" xsi:type="string" translate="true">These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you</item>
+                                        <item name="description" xsi:type="string" translate="true">These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you.</item>
                                         <item name="toggle" xsi:type="array">
                                             <item name="value" xsi:type="string">targeting</item>
                                             <item name="enabled" xsi:type="boolean">false</item>
@@ -92,7 +92,7 @@
                                     </item>
                                     <item name="4" xsi:type="array">
                                         <item name="title" xsi:type="string" translate="true">More information</item>
-                                        <item name="description" xsi:type="string" translate="true"><![CDATA[For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.]]></item>
+                                        <item name="description" xsi:type="string" translate="true"><![CDATA[For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="/contact">contact us</a>.]]></item>
                                     </item>
                                 </item>
                             </item>
